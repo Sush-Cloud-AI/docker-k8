@@ -7,7 +7,7 @@ COPY index.html /usr/share/nginx/html/index.html
 #CMD ["nginx", "-g", "daemon off;"]
 EXPOSE 80
 LABEL COMPONENT=nginx
-#ENTRYPOINT [ "nginx", "-g", "daemon off;" ]
+ENTRYPOINT [ "nginx", "-g", "daemon off;" ]
 
 ### entry point
 ## CMD VS Entrypoint
